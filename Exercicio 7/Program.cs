@@ -1,6 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
-int numero;
+int numero, fator = 1;
 
 Console.WriteLine("Digite um número para calcular seu fatorial:");
 numero = Convert.ToInt32(Console.ReadLine());
@@ -11,8 +11,9 @@ if(numero == 0)
 }
 else
 {
-    for(int i = 0; i <= numero; i++)
+    for(int i = 1; i <= numero; i++)
     {
-
+        fator *= i;
     }
 }
+Console.WriteLine("O Resultado é: "+ fator);
